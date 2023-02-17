@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+       <div class="form-container">
+            <h1>Administrator Login</h1>
+            <div class="userinp">
+                <input type="text" id="user1" placeholder="Username">
+                <input type="password" id="pw1" placeholder="Password">
+            </div>
+            <div class="signinbut"><button onclick="myFunction()">LOGIN</button></div>
+            <div class="fpbut"><button>Forgot Password?</button></div>
+        </div>
+        <div class="text-container">
+            <!--<h1>Sign Up</h1>
+            <p>Using your social media account</p>-->
+            <img class="logo" src="adminlogin.png">
+            <img class="logo1" src="adminlogin.png">
+            <div class="cb1">
+                <input type="checkbox" id="terms1" name="terms1" value="terms">
+                <label for="terms1">By Signing up I agree with terms and conditions</label>
+            </div>
+            <a href="/signUp">Create Account?</a>
+        </div>
+    </div>
+    <ul>
+        <li><button>privacy</button></li>
+        <li><button>about</button></li>
+        <li><button>contact</button></li>
+    </ul>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script>
+        function myFunction()
+        {
+            var terms=document.getElementById("terms1");
+            if(terms.checked==true)
+            {
+                const user= document.getElementById("user1").value;
+                const pass=document.getElementById("pw1").value;
+                if(user=='psg' && pass=='amcs'){
+                    console.log("login successful");
+                    window.open("home.html");
+                }
+                else
+                {
+                    window.alert('incorrect password');
+                }
+            }
+            else{
+                window.alert('Please agree the terms and conditions to continue!!');
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
