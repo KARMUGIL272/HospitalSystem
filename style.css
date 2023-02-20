@@ -37,9 +37,10 @@ body{
 }
 .text-container{
     width:50%;
-    background-image: url('back4.jpg');
+    background-image: url('imgl.jpeg');
+    background-size: cover;
     /*background-color: rgb(41, 40, 40);*/
-    background-size:contain;
+    /* background-size:contain; */
     border: 10px;
     padding-top: 10px;
     padding-right: 15px;
@@ -59,20 +60,20 @@ body{
     cursor: pointer;
     font-size: 10.25px ;
 }
-.text-container .logo {
+/* .text-container .logo {
     margin-right:10px;
     margin-top:0px;
     height: 55px;
     width:140px;
 
-}
-.text-container .logo1{
+} */
+/* .text-container .logo1{
 
-    margin-top: 20px;
+    margin-top: 40px;
     margin-right: 40px;
     height: 200px;
     width: 250px;
-}
+} */
 .text-container input{
     
     height: 15px;
@@ -88,7 +89,7 @@ body{
 .cb1
 {
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 275px;
 }
 
 
